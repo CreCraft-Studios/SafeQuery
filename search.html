@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SafeQuery</title>
+        <link type="text/css" href="style/main.css" rel="stylesheet">
+        <link type="text/css" href="style/search.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            (function() {
+                const oPushState = history.pushState;
+                history.pushState = function(...args) {
+                    oPushState.apply(this, args);
+                    window.dispatchEvent(new Event('history_pushstate'));
+                };
+
+                const oReplace = history.replaceState;
+                history.replaceState = function(...args) {
+                    oReplace.apply(this, args);
+                    window.dispatchEvent(new Event('history_replace'));
+                }
+            })();
+        </script>
+        <script src="js/blacklist.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <main class="results">
+                <div style="position: sticky; z-index: 999; top: 0px;">
+                    <div class="search-box-wrapper">
+                        <a class="title" href="https://safequery.crecraftstudios.com">SafeQuery</a>
+                        <div class="inner-wrapper">
+                            <input type="textbox" id="search_box" placeholder="Search...">
+                            <button type="button" id="search_btn" title="Search">
+                                <img src="search_btn.png" class="search-btn-icon" style="width: 100%; height: 100%;" title="Search"></img>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="branding" style="margin-top: 0px !important;"></div>
+                </div>
+                <div id="blockedMsg" class="gs-webResult gs-result gs-no-results-result" style="display: none !important;">
+                    <div class="gs-snippet">Search Blocked. Try changing your keywords</div>
+                </div>
+                <script async src="https://cse.google.com/cse.js?cx=87add4dac20774ece"></script>
+                <div class="gcse-searchresults-only"></div>
+            </main>
+
+            <footer>
+                <hr style="margin-top: 0px;">
+                <div class="footer-wrapper">
+                    <a class="footer-text footer-text-left" href="https://github.com/crecraft-Studios/SafeQuery">GitHub Source</a>
+                </div>
+            </footer>
+        </div>
+        <script src="js/searchpage.js"></script>
+        <script src="js/searchbox.js"></script>
+        <script src="https://www.gstatic.com/prose/brand.js" targetId="branding"></script>
+    </body>
+</html>
