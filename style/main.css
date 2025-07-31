@@ -1,0 +1,38 @@
+body {background-color: #333333;}
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+footer {
+    height: clamp(4vh, 2vh, 7vh);
+    background-color: #404040;
+    padding: 0px;
+}
+
+.footer-wrapper {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.footer-text {
+    color: white;
+    font-family: verdana, arial, sans-serif;
+    font-size: 0.7rem;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#branding {
+    background-color: #f0f0f0;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
