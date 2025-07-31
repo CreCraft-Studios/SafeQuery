@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+body {
+	background-color: #e7e7e7;
+	font-family: Arial, sans-serif;
+}
+
+.head {
+	padding: 50px 50px 35px;
+}
+
+.logo {
+	max-width: 250px;
+	display: block;
+	margin: 0 auto;
+}
+
+.card {
+	max-width: 600px;
+	padding: 40px 45px;
+	background-color: white;
+	border-radius: 15px;
+	margin: 0 auto;
+	color: #333333;
+	font-size: 16px;
+}
+
+.title {
+	color: #af4e8a;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+
+.subtitle {
+	text-align: center;
+	margin: 0;
+	padding: 25px 0;
+}
+
+.paragraph {
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+
+.link {
+	color: #af4e8a;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.footer {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#izqz {
+	text-align: center;
+	font-weight: 700;
+	font-size: 5rem;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 66.4px;
+	margin-right: 0px;
+	margin-bottom: 1px;
+	margin-left: 0px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.gjs-container {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.gjs-section {
+	display: flex;
+	padding: 50px 0;
+}
+
+#if3r {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.gjs-grid-column {
+	flex: 1 1 0%;
+	padding: 5px 0;
+}
+
+.gjs-grid-row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: row;
+	min-height: auto;
+	padding: 10px 0;
+}
+
+#search_box {
+	width: 100%;
+	font-size: 3rem;
+}
+
+#search_btn {
+	font-size: 3rem;
+}
+
+#im0g {
+	background-color: #333333;
+}
+
+#i87or {
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	position: static;
+}
+
+#iuvmh {
+	flex: 1 1 60%;
+}
+
+@media (max-width: 992px) {
+	.gjs-grid-row {
+		flex-direction: column;
+	}
+
+	#i87or {
+		padding-top: 10px;
+		padding-right: 0px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+	}
+
+	#iuvmh {
+		flex: 0 0 80%;
+	}
+}
+
+@media (max-width: 768px) {
+	#search_box {
+		width: 100%;
+		font-size: 2.5rem;
+	}
+
+	#search_btn {
+		justify-content: flex-start;
+		font-size: 2.5rem;
+	}
+
+	#i8gyl {
+		align-self: center;
+	}
+}
+
+@media (max-width: 480px) {
+	#izqz {
+		font-size: 3rem;
+	}
+
+	#i87or {
+		display: inline-block;
+	}
+}
