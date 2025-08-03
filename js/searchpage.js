@@ -3,7 +3,7 @@
     var bIsSafeApplied=false;
 
     function bisSearchAllowed(query) {
-        return !blacklist.some(b=>query.includes(b));
+        return !blacklist.some(b=>query.toLowerCase().includes(b));
     }
 
     function blockedMessage(show) {
@@ -110,4 +110,5 @@
             search();
         }
     }
+
 })();
